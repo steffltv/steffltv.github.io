@@ -1,17 +1,18 @@
-.image-container {
-  display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center;     /* Centers vertically */
-  height: 100vh;           /* Example: centers in the full viewport height. Adjust as needed. */
-  border: 1px solid black; /* Optional: adds a border to see the container boundaries */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #000000;
 }
 
-.image-container img {
-  width: 50%;
-  height: auto;            /* Maintains aspect ratio */
-  max-width: 100%;         /* Ensures image doesn't overflow container if 50% is too large */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-body {
-  background-color: black;
+img {
+    max-width: 100%;
+    height: auto;
 }
