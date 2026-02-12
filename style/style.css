@@ -1,19 +1,49 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    background-color: black;
+    background-color: #000;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.container img {
+.content {
     width: 100%;
-    max-width: 600px;
+    max-width: 900px;
+    text-align: center;
+}
+
+.content img {
+    width: 100%;
     height: auto;
+    display: block;
+}
+
+.social-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 25px 0;
+}
+
+.social-row a {
+    font-size: 32px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Brand Colors */
+.social-row a:nth-child(1) { color: #1877F2; }  /* Facebook */
+.social-row a:nth-child(2) { color: #FF0000; }  /* YouTube */
+.social-row a:nth-child(3) { color: #9146FF; }  /* Twitch */
+.social-row a:nth-child(4) { color: #00A3FF; }  /* Bluesky */
+.social-row a:nth-child(5) { color: #E1306C; }  /* Instagram */
+
+.social-row a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
 }
